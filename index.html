@@ -135,7 +135,7 @@
   --muted:#4a6b65;
   --shadow:0 20px 40px rgba(17,107,93,0.08);
 }
-html{scroll-behavior:smooth;}
+html{scroll-behavior:smooth;scroll-padding-top:88px;}
 body{font-family:'Manrope',sans-serif;background:var(--bg);color:var(--text);line-height:1.6;}
 
 /* NAV */
@@ -145,6 +145,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2rem;display:fl
 .nav-logo span{font-family:'Inter',sans-serif;font-weight:800;font-size:18px;color:var(--green);}
 .nav-cta{background:linear-gradient(15deg,var(--green),var(--green-light));color:#fff;padding:10px 24px;border-radius:9999px;font-size:14px;font-weight:600;text-decoration:none;transition:opacity .2s;}
 .nav-cta:hover{opacity:0.88;}
+.nav-cta:focus-visible{outline:2px solid var(--green);outline-offset:3px;}
 
 /* HERO */
 .hero{min-height:100vh;display:flex;align-items:center;padding:8rem 2rem 4rem;max-width:1100px;margin:0 auto;gap:4rem;}
@@ -157,9 +158,12 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2rem;display:fl
 .btn-primary{background:linear-gradient(15deg,var(--green),var(--green-light));color:#fff;padding:14px 32px;border-radius:9999px;font-size:15px;font-weight:600;text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:transform .2s,opacity .2s;box-shadow:0 8px 24px rgba(17,107,93,0.25);}
 .btn-primary:hover{transform:translateY(-2px);opacity:0.92;}
 .btn-secondary{color:var(--muted);font-size:14px;text-decoration:none;display:inline-flex;align-items:center;gap:6px;}
-.hero-free{font-size:12px;color:var(--muted);margin-top:1rem;}
+.hero-checks{list-style:none;margin:1rem 0 0;padding:0;display:flex;flex-direction:column;align-items:flex-start;gap:0.35rem;}
+.hero-text .hero-checks{max-width:none;}
+.hero-checks li{display:flex;align-items:flex-start;gap:0.45rem;margin:0;font-size:12px;line-height:1.45;font-weight:500;color:var(--muted);}
+.hero-checks li::before{content:"✓";font-weight:700;color:var(--green);flex:0 0 auto;line-height:1.45;}
 .hero-screens{flex:1;position:relative;display:flex;justify-content:center;align-items:center;min-height:500px;}
-.screen-main{width:220px;border-radius:36px;box-shadow:var(--shadow),0 4px 12px rgba(0,0,0,0.1);position:relative;z-index:2;}
+.screen-main{width:220px;height:auto;object-fit:contain;border-radius:36px;box-shadow:var(--shadow),0 4px 12px rgba(0,0,0,0.1);position:relative;z-index:2;align-self:center;}
 .screen-float{width:160px;border-radius:28px;box-shadow:var(--shadow);position:absolute;bottom:-20px;right:10px;z-index:3;}
 
 /* FEATURES */
@@ -180,13 +184,13 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2rem;display:fl
 .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:2rem;margin-top:3rem;}
 .step{display:flex;flex-direction:column;gap:1rem;}
 .step-num{font-family:'Inter',sans-serif;font-size:3rem;font-weight:800;color:var(--green);opacity:0.2;line-height:1;}
-.step img{width:100%;border-radius:20px;box-shadow:var(--shadow);}
+.step img{width:100%;height:auto;object-fit:contain;border-radius:20px;box-shadow:var(--shadow);}
 .step h3{font-family:'Inter',sans-serif;font-size:1rem;font-weight:700;color:var(--text);}
 .step p{font-size:0.875rem;color:var(--muted);line-height:1.6;}
 
 /* SCREENSHOTS GALLERY */
-.screens-gallery{display:flex;gap:20px;overflow-x:auto;margin-top:3rem;padding-bottom:1rem;-webkit-overflow-scrolling:touch;scroll-snap-type:x proximity;}
-.screens-gallery img{flex:0 0 auto;width:220px;border-radius:24px;box-shadow:var(--shadow);scroll-snap-align:start;}
+.screens-gallery{display:flex;align-items:flex-start;gap:20px;overflow-x:auto;margin-top:3rem;padding-bottom:1rem;-webkit-overflow-scrolling:touch;scroll-snap-type:x proximity;}
+.screens-gallery img{flex:0 0 auto;align-self:flex-start;width:220px;height:auto;object-fit:contain;border-radius:24px;box-shadow:var(--shadow);scroll-snap-align:start;}
 
 /* PRICING */
 .pricing-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-top:3rem;}
@@ -226,7 +230,7 @@ footer{background:var(--text);color:rgba(255,255,255,0.7);padding:3rem 2rem;}
 @media(max-width:768px){
   .hero{flex-direction:column;padding-top:6rem;gap:2.5rem;}
   .hero-screens{min-height:300px;}
-  .screen-main{width:170px;}
+  .screen-main{width:170px;height:auto;}
   .screen-float{width:120px;}
   nav{padding:0.875rem 1.25rem;}
   .nav-logo span{font-size:16px;}
@@ -268,7 +272,10 @@ footer{background:var(--text);color:rgba(255,255,255,0.7);padding:3rem 2rem;}
   </a>
 </div>
     </div>
-    <p class="hero-free">✓ Gratis te downloaden, met optionele aankopen in de app &nbsp;·&nbsp; ✓ Geen account nodig</p>
+    <ul class="hero-checks">
+      <li>Gratis te downloaden, met optionele aankopen in de app</li>
+      <li>Geen account nodig</li>
+    </ul>
   </div>
   <div class="hero-screens">
     <img class="screen-main" src="assets/screenshot-scan-web.jpg" width="296" height="640" alt="BellyBliss — scan via barcode of ingrediëntenlijst" fetchpriority="high">
