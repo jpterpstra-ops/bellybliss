@@ -3,24 +3,32 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BellyBliss — Ontdek wat jouw buik triggert</title>
-<meta name="description" content="Scan ingrediënten, houd bij hoe je buik voelt en ontdek persoonlijke patronen. Gratis te downloaden, met optionele aankopen in de app. Geen account nodig.">
+<title>FODMAP-scanner en buikdagboek bij PDS | BellyBliss</title>
+<meta name="description" content="FODMAP-scanner voor de Nederlandse supermarkt. Bij PDS scan je ingrediënten en houd je een buikdagboek bij.">
 <link rel="canonical" href="https://bellybliss.online/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="BellyBliss">
 <meta property="og:locale" content="nl_NL">
-<meta property="og:title" content="BellyBliss — Ontdek wat jouw buik triggert">
-<meta property="og:description" content="Scan ingrediënten, houd bij hoe je buik voelt en ontdek persoonlijke patronen. Gratis te downloaden, met optionele aankopen in de app. Geen account nodig.">
+<meta property="og:title" content="FODMAP-scanner en buikdagboek bij PDS | BellyBliss">
+<meta property="og:description" content="FODMAP-scanner voor de Nederlandse supermarkt. Bij PDS scan je ingrediënten en houd je een buikdagboek bij.">
 <meta property="og:url" content="https://bellybliss.online/">
 <meta property="og:image" content="https://bellybliss.online/assets/og-bellybliss.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="BellyBliss: scan ingrediënten en houd bij hoe je buik voelt">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="BellyBliss — Ontdek wat jouw buik triggert">
-<meta name="twitter:description" content="Scan ingrediënten, houd bij hoe je buik voelt en ontdek persoonlijke patronen. Gratis te downloaden, met optionele aankopen in de app. Geen account nodig.">
+<meta name="twitter:title" content="FODMAP-scanner en buikdagboek bij PDS | BellyBliss">
+<meta name="twitter:description" content="FODMAP-scanner voor de Nederlandse supermarkt. Bij PDS scan je ingrediënten en houd je een buikdagboek bij.">
 <meta name="twitter:image" content="https://bellybliss.online/assets/og-bellybliss.jpg">
-<link rel="icon" href="/assets/logo.jpg" type="image/jpeg">
+<link rel="preload" href="/assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon-96.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#116b5d">
 <link rel="stylesheet" href="/assets/site.css">
 <script type="application/ld+json">
 {
@@ -32,10 +40,11 @@
       "name": "BellyBliss",
       "url": "https://bellybliss.online/",
       "email": "bellybliss.app@gmail.com",
-      "logo": "https://bellybliss.online/assets/logo.jpg",
-      "founder": {
-        "@type": "Person",
-        "name": "Jean-Paul Terpstra"
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://bellybliss.online/assets/logo-144.png",
+        "width": 144,
+        "height": 144
       }
     },
     {
@@ -105,7 +114,7 @@
           "name": "Wat gebeurt er met mijn gegevens?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Je dagboek, toleranties en symptomen blijven in de app op je telefoon. Bij een barcodeopzoeking gaan de barcode en technische verbindingsgegevens naar Open Food Facts. Abonnementen, meldingen en beveiliging gebruiken externe diensten. Deze release heeft geen actieve AI-diepteanalyse. Lees het privacybeleid voor de details."
+            "text": "Je dagboek, toleranties en symptomen blijven in de app op je telefoon. Bij een barcodeopzoeking gaan de barcode en technische verbindingsgegevens naar Open Food Facts. Abonnementen, meldingen en beveiliging gebruiken externe diensten. Lees het privacybeleid voor de details."
           }
         },
         {
@@ -121,7 +130,6 @@
   ]
 }
 </script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box;margin:0;padding:0;}
 :root{
@@ -151,7 +159,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2rem;display:fl
 .hero{min-height:100vh;display:flex;align-items:center;padding:8rem 2rem 4rem;max-width:1100px;margin:0 auto;gap:4rem;}
 .hero-text{flex:1;}
 .hero-badge{display:inline-block;background:var(--surface);color:var(--green);font-size:12px;font-weight:600;padding:6px 16px;border-radius:9999px;margin-bottom:1.5rem;letter-spacing:0.04em;}
-.hero-text h1{font-family:'Inter',sans-serif;font-size:clamp(2.2rem,4.5vw,3.4rem);font-weight:300;letter-spacing:-0.03em;line-height:1.1;letter-spacing:-0.02em;color:var(--text);margin-bottom:1.25rem;}
+.hero-text h1{font-family:'Inter',sans-serif;font-size:clamp(2.2rem,4.5vw,3.4rem);font-weight:300;letter-spacing:-0.03em;line-height:1.1;letter-spacing:-0.02em;color:var(--text);margin-bottom:0.4rem;}.hero-text p.hero-subline{font-size:1.02rem;font-weight:600;color:var(--green);max-width:36rem;margin:0 0 1rem;line-height:1.45;}
 .hero-text h1 span{color:var(--green);}
 .hero-text p{font-size:1.1rem;color:var(--muted);max-width:480px;margin-bottom:2rem;line-height:1.7;}
 .hero-actions{display:flex;gap:12px;flex-wrap:wrap;align-items:center;}
@@ -195,11 +203,11 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2rem;display:fl
 /* PRICING */
 .pricing-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-top:3rem;}
 .price-card{background:var(--card);border-radius:24px;padding:28px;box-shadow:var(--shadow);text-align:center;position:relative;}
-.price-card.featured{background:linear-gradient(15deg,var(--green),var(--green-light));color:#fff;}
+.price-card.featured{background:linear-gradient(15deg,#116b5d,#158271);color:#fff;}
 .price-badge{position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--terra);color:#fff;font-size:11px;font-weight:600;padding:4px 14px;border-radius:9999px;white-space:nowrap;}
 .price-period{font-size:12px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;opacity:0.7;margin-bottom:0.75rem;}
 .price-amount{font-family:'Inter',sans-serif;font-size:2.2rem;font-weight:800;line-height:1;margin-bottom:0.25rem;}
-.price-sub{font-size:12px;opacity:0.65;margin-bottom:1.5rem;}
+.price-sub{font-size:12px;opacity:0.7;margin-bottom:1.5rem;}.price-card.featured .price-sub{opacity:1;}
 .price-features{list-style:none;text-align:left;font-size:13px;display:flex;flex-direction:column;gap:8px;}
 .price-features li{display:flex;align-items:center;gap:8px;opacity:0.85;}
 .price-features li::before{content:"✓";font-weight:700;color:var(--green);flex-shrink:0;}
@@ -276,7 +284,7 @@ footer{background:var(--text);color:rgba(255,255,255,0.7);padding:3rem 2rem;}
 <!-- NAV -->
 <nav>
   <a class="nav-logo" href="/">
-    <img src="/assets/logo.jpg" width="36" height="36" alt="BellyBliss">
+    <picture><source type="image/webp" srcset="/assets/logo-72.webp 72w, /assets/logo-144.webp 144w" sizes="36px"><img src="/assets/logo-72.png" srcset="/assets/logo-72.png 72w, /assets/logo-144.png 144w" sizes="36px" width="36" height="36" alt=""></picture>
     <span>BellyBliss</span>
   </a>
   <div class="nav-end">
@@ -290,6 +298,7 @@ footer{background:var(--text);color:rgba(255,255,255,0.7);padding:3rem 2rem;}
   <div class="hero-text">
     <div class="hero-badge">🌿 Voor iedereen met PDS & buikklachten</div>
     <h1>Eindelijk weten wat jouw buik <span>triggert</span>.</h1>
+    <p class="hero-subline">Voor wie leeft met PDS (prikkelbare darm)</p>
     <p>Scan ingrediënten, houd bij hoe je je voelt en ontdek je persoonlijke patronen.</p>
     <div class="hero-actions">
       <div class="store-pair" id="winkels">
@@ -300,7 +309,7 @@ footer{background:var(--text);color:rgba(255,255,255,0.7);padding:3rem 2rem;}
     <p class="appstore-nl-note">Binnenkort weer beschikbaar in Nederland</p>
   </div>
   <a class="store-badge-link" href="https://play.google.com/store/apps/details?id=com.bellybliss.app" target="_blank" rel="noopener noreferrer">
-    <img class="store-badge-play" src="/assets/badges/google-play-nl.png" width="646" height="250" alt="Ontdek het op Google Play">
+    <img class="store-badge-play" src="/assets/badges/google-play-nl.png" width="289" height="112" alt="Ontdek het op Google Play">
   </a>
 </div>
     </div>
@@ -310,7 +319,7 @@ footer{background:var(--text);color:rgba(255,255,255,0.7);padding:3rem 2rem;}
     </ul>
   </div>
   <div class="hero-screens">
-    <img class="screen-main" src="assets/screenshot-scan-web.jpg" width="296" height="640" alt="BellyBliss — scan via barcode of ingrediëntenlijst" fetchpriority="high">
+    <picture><source type="image/webp" srcset="assets/screenshot-scan-web.webp"><img class="screen-main" src="assets/screenshot-scan-web.jpg" width="296" height="640" alt="BellyBliss — scan via barcode of ingrediëntenlijst" fetchpriority="high"></picture>
   </div>
 </section>
 
@@ -318,7 +327,7 @@ footer{background:var(--text);color:rgba(255,255,255,0.7);padding:3rem 2rem;}
 <section class="section">
   <div class="section-label">Wat BellyBliss doet</div>
   <h2 class="section-title">Alles wat je nodig hebt.<br>Niks wat je niet nodig hebt.</h2>
-  <p class="section-sub">Gebouwd voor iedereen die al genoeg heeft geprobeerd en gewoon wil weten wat er aan de hand is.</p>
+  <p class="section-sub">Gebouwd voor iedereen met een prikkelbare darm die al genoeg heeft geprobeerd en gewoon wil weten wat er aan de hand is.</p>
 
   <div class="features-grid">
     <div class="feature-card">
@@ -366,10 +375,10 @@ footer{background:var(--text);color:rgba(255,255,255,0.7);padding:3rem 2rem;}
   <h2 class="section-title">Zo ziet het eruit.</h2>
   <p class="section-sub">Van scannen tot je eigen tolerantielijst, van patronen ontdekken tot even bijkomen met een adempauze.</p>
   <div class="screens-gallery">
-    <img src="assets/screenshot-scan-web.jpg" width="296" height="640" alt="Scan via barcode of ingrediëntenlijst" loading="lazy" decoding="async">
-    <img src="assets/screenshot-toleranties-web.jpg" width="296" height="640" alt="Stel je eigen tolerantielijst in" loading="lazy" decoding="async">
-    <img src="assets/screenshot-patroon-web.jpg" width="296" height="640" alt="Deel een overzicht met je diëtist" loading="lazy" decoding="async">
-    <img src="assets/screenshot-adempauze-web.jpg" width="296" height="640" alt="Meditatieve ademoefeningen bij PDS" loading="lazy" decoding="async">
+    <picture><source type="image/webp" srcset="assets/screenshot-scan-web.webp"><img src="assets/screenshot-scan-web.jpg" width="296" height="640" alt="Scan via barcode of ingrediëntenlijst" loading="lazy" decoding="async"></picture>
+    <picture><source type="image/webp" srcset="assets/screenshot-toleranties-web.webp"><img src="assets/screenshot-toleranties-web.jpg" width="296" height="640" alt="Stel je eigen tolerantielijst in" loading="lazy" decoding="async"></picture>
+    <picture><source type="image/webp" srcset="assets/screenshot-patroon-web.webp"><img src="assets/screenshot-patroon-web.jpg" width="296" height="640" alt="Deel een overzicht met je diëtist" loading="lazy" decoding="async"></picture>
+    <picture><source type="image/webp" srcset="assets/screenshot-adempauze-web.webp"><img src="assets/screenshot-adempauze-web.jpg" width="296" height="640" alt="Meditatieve ademoefeningen bij PDS" loading="lazy" decoding="async"></picture>
   </div>
 </section>
 
@@ -453,7 +462,7 @@ footer{background:var(--text);color:rgba(255,255,255,0.7);padding:3rem 2rem;}
       </div>
       <div class="faq-item">
         <h3>Wat gebeurt er met mijn gegevens?</h3>
-        <p>Je dagboek, toleranties en symptomen blijven in de app op je telefoon. Bij een barcodeopzoeking gaan de barcode en technische verbindingsgegevens naar Open Food Facts. Abonnementen, meldingen en beveiliging gebruiken externe diensten. Deze release heeft geen actieve AI-diepteanalyse. Lees het <a href="/privacy.html">privacybeleid</a> voor de details.</p>
+        <p>Je dagboek, toleranties en symptomen blijven in de app op je telefoon. Bij een barcodeopzoeking gaan de barcode en technische verbindingsgegevens naar Open Food Facts. Abonnementen, meldingen en beveiliging gebruiken externe diensten. Lees het <a href="/privacy.html">privacybeleid</a> voor de details.</p>
       </div>
       <div class="faq-item">
         <h3>Hoe zeg ik mijn abonnement op?</h3>
@@ -498,7 +507,7 @@ footer{background:var(--text);color:rgba(255,255,255,0.7);padding:3rem 2rem;}
   <div class="footer-inner">
     <div>
       <div class="footer-brand">
-        <img src="/assets/logo.jpg" width="36" height="36" alt="BellyBliss">
+        <picture><source type="image/webp" srcset="/assets/logo-72.webp 72w, /assets/logo-144.webp 144w" sizes="36px"><img src="/assets/logo-72.png" srcset="/assets/logo-72.png 72w, /assets/logo-144.png 144w" sizes="36px" width="36" height="36" alt=""></picture>
         <span>BellyBliss</span>
       </div>
       <p class="footer-tagline">Ontdek wat jouw buik triggert.</p>
@@ -515,7 +524,7 @@ footer{background:var(--text);color:rgba(255,255,255,0.7);padding:3rem 2rem;}
     </div>
     <div>
       <a href="/privacy.html" style="display:block;font-size:13px;font-weight:600;color:rgba(255,255,255,0.9);margin-bottom:1rem;text-decoration:underline;">Privacybeleid</a>
-      <p style="font-size:13px;line-height:1.6;max-width:260px;">Je dagboek wordt lokaal bewaard. Productopzoekingen, abonnementen, meldingen en beveiliging gebruiken externe diensten die technische gegevens verwerken. Lees ons privacybeleid voor meer informatie. Deze release heeft geen actieve AI-diepteanalyse.</p>
+      <p style="font-size:13px;line-height:1.6;max-width:260px;">Je dagboek wordt lokaal bewaard. Productopzoekingen, abonnementen, meldingen en beveiliging gebruiken externe diensten die technische gegevens verwerken. Lees ons privacybeleid voor meer informatie.</p>
     </div>
   </div>
 <div class="legal-trademarks">

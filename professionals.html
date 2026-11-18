@@ -20,7 +20,15 @@
 <meta name="twitter:title" content="Voor zorgprofessionals — BellyBliss">
 <meta name="twitter:description" content="BellyBliss voor diëtisten en artsen: patiënten leggen voeding en buikklachten vast met een scanner, dagboek en consultoverzicht. Geen diagnose.">
 <meta name="twitter:image" content="https://bellybliss.online/assets/og-bellybliss.jpg">
-<link rel="icon" href="/assets/logo.jpg" type="image/jpeg">
+<link rel="preload" href="/assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon-96.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#116b5d">
 <link rel="stylesheet" href="/assets/site.css">
 <script type="application/ld+json">
 {
@@ -32,10 +40,11 @@
       "name": "BellyBliss",
       "url": "https://bellybliss.online/",
       "email": "bellybliss.app@gmail.com",
-      "logo": "https://bellybliss.online/assets/logo.jpg",
-      "founder": {
-        "@type": "Person",
-        "name": "Jean-Paul Terpstra"
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://bellybliss.online/assets/logo-144.png",
+        "width": 144,
+        "height": 144
       }
     },
     {
@@ -88,7 +97,6 @@
   ]
 }
 </script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box;margin:0;padding:0;}
 :root{
@@ -225,14 +233,14 @@ nav{position:sticky;top:0;z-index:100;background:var(--bg);border-bottom:1px sol
 
 <!-- NAV -->
 <nav>
-  <a class="nav-logo" href="index.html">
-    <img width="128" height="128" src="/assets/pro-logo.jpg" alt="BellyBliss">
+  <a class="nav-logo" href="/">
+    <picture><source type="image/webp" srcset="/assets/logo-72.webp 72w, /assets/logo-144.webp 144w" sizes="28px"><img src="/assets/logo-72.png" srcset="/assets/logo-72.png 72w, /assets/logo-144.png 144w" sizes="28px" width="28" height="28" alt=""></picture>
     <span>BellyBliss</span>
   </a>
   <div class="nav-links">
-    <a href="index.html">Voor gebruikers</a>
+    <a href="/">Voor gebruikers</a>
     <a class="nav-always" href="/blog/">Blog</a>
-    <a href="index.html#faq">FAQ</a>
+    <a href="/#faq">FAQ</a>
     <a href="mailto:bellybliss.app@gmail.com">Contact</a>
   </div>
   <a class="nav-cta" href="mailto:bellybliss.app@gmail.com?subject=Proefcode aanvragen — BellyBliss&body=Hoi,%0D%0A%0D%0AIk ben geïnteresseerd in een gratis proefcode voor BellyBliss.%0D%0A%0D%0AMijn naam:%0D%0AMijn functie:%0D%0A%0D%0AGroeten,">Word partner</a>
@@ -259,13 +267,13 @@ nav{position:sticky;top:0;z-index:100;background:var(--bg);border-bottom:1px sol
     <p class="appstore-nl-note">Binnenkort weer beschikbaar in Nederland</p>
   </div>
   <a class="store-badge-link" href="https://play.google.com/store/apps/details?id=com.bellybliss.app" target="_blank" rel="noopener noreferrer">
-    <img class="store-badge-play" src="/assets/badges/google-play-nl.png" width="646" height="250" alt="Ontdek het op Google Play">
+    <img class="store-badge-play" src="/assets/badges/google-play-nl.png" width="289" height="112" alt="Ontdek het op Google Play">
   </a>
 </div>
     </div>
   </div>
   <div class="hero-img">
-    <img src="assets/screenshot-patroon-web.jpg" width="296" height="640" alt="BellyBliss patroonanalyse" fetchpriority="high">
+    <picture><source type="image/webp" srcset="assets/screenshot-patroon-web.webp"><img src="assets/screenshot-patroon-web.jpg" width="296" height="640" alt="BellyBliss patroonanalyse" fetchpriority="high"></picture>
   </div>
 </div>
 
@@ -305,11 +313,11 @@ nav{position:sticky;top:0;z-index:100;background:var(--bg);border-bottom:1px sol
         <p style="margin-top:0.75rem;">De database wordt regelmatig bijgewerkt om ook afwijkende benamingen en E-nummers correct te herkennen.</p>
         <div class="feature-note">
           <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          <p><strong>Lokale ingrediëntenanalyse</strong> — deze release heeft geen actieve AI-diepteanalyse. Productopzoekingen, abonnementen, meldingen en beveiliging gebruiken externe diensten die technische gegevens verwerken. Lees het <a href="privacy.html">privacybeleid</a> voor meer informatie.</p>
+          <p><strong>Lokale ingrediëntenanalyse</strong> — productopzoekingen, abonnementen, meldingen en beveiliging gebruiken externe diensten die technische gegevens verwerken. Lees het <a href="privacy.html">privacybeleid</a> voor meer informatie.</p>
         </div>
       </div>
       <div class="feature-img-wrap">
-        <img src="assets/screenshot-scan-web.jpg" width="296" height="640" alt="Ingrediënten analyseren" loading="lazy" decoding="async">
+        <picture><source type="image/webp" srcset="assets/screenshot-scan-web.webp"><img src="assets/screenshot-scan-web.jpg" width="296" height="640" alt="Ingrediënten analyseren" loading="lazy" decoding="async"></picture>
       </div>
     </div>
 
@@ -320,7 +328,7 @@ nav{position:sticky;top:0;z-index:100;background:var(--bg);border-bottom:1px sol
         <p>Na de analyse ziet de patiënt direct welke triggers er gevonden zijn en hoe die aansluiten op zijn persoonlijk profiel. Per ingrediënt is zichtbaar waarom het problematisch is — zo leren patiënten begrijpen wat hun buik triggert en wat niet.</p>
       </div>
       <div class="feature-img-wrap">
-        <img width="640" height="1385" src="/assets/pro-scanresultaat.jpg" loading="lazy" decoding="async" alt="Scanresultaat">
+        <picture><source type="image/webp" srcset="/assets/pro-scanresultaat.webp"><img width="640" height="1385" src="/assets/pro-scanresultaat.jpg" loading="lazy" decoding="async" alt="Scanresultaat"></picture>
       </div>
     </div>
 
@@ -331,7 +339,7 @@ nav{position:sticky;top:0;z-index:100;background:var(--bg);border-bottom:1px sol
         <p>Dagelijks bijhouden hoe de buik zich voelt — welke klachten, hoe ernstig, wat er gegeten is. Eenvoudig en snel, zodat er over tijd bruikbare data ontstaat. Dit logboek is het fundament voor de patroonanalyse en een concreet gespreksonderwerp in het consult.</p>
       </div>
       <div class="feature-img-wrap">
-        <img width="640" height="1385" src="/assets/pro-logboek.jpg" loading="lazy" decoding="async" alt="Symptomenlogboek">
+        <picture><source type="image/webp" srcset="/assets/pro-logboek.webp"><img width="640" height="1385" src="/assets/pro-logboek.jpg" loading="lazy" decoding="async" alt="Symptomenlogboek"></picture>
       </div>
     </div>
 
@@ -342,7 +350,7 @@ nav{position:sticky;top:0;z-index:100;background:var(--bg);border-bottom:1px sol
         <p>Na een paar weken legt de app verbanden tussen voeding en klachten. Patiënten zien welke ingrediënten of producten steeds terugkomen op slechte dagen — en wat juist goed wordt verdragen. Deze inzichten zijn een concreet startpunt voor het gesprek in uw consult.</p>
       </div>
       <div class="feature-img-wrap">
-        <img width="640" height="1385" src="/assets/pro-patroon.jpg" loading="lazy" decoding="async" alt="Patroonanalyse">
+        <picture><source type="image/webp" srcset="/assets/pro-patroon.webp"><img width="640" height="1385" src="/assets/pro-patroon.jpg" loading="lazy" decoding="async" alt="Patroonanalyse"></picture>
       </div>
     </div>
 
@@ -406,7 +414,7 @@ nav{position:sticky;top:0;z-index:100;background:var(--bg);border-bottom:1px sol
         </a>
       </div>
       <div class="insights-img">
-        <img width="640" height="1385" src="/assets/pro-inzichten.jpg" loading="lazy" decoding="async" alt="App inzichten">
+        <picture><source type="image/webp" srcset="/assets/pro-inzichten.webp"><img width="640" height="1385" src="/assets/pro-inzichten.jpg" loading="lazy" decoding="async" alt="App inzichten"></picture>
       </div>
     </div>
   </div>
@@ -496,18 +504,17 @@ nav{position:sticky;top:0;z-index:100;background:var(--bg);border-bottom:1px sol
       <h4>Product</h4>
       <a href="#winkels">Download de app</a>
       <a href="/blog/">Blog</a>
-      <a href="index.html">Voor gebruikers</a>
+      <a href="/">Voor gebruikers</a>
     </div>
     <div class="footer-col">
       <h4>Support</h4>
-      <a href="index.html#faq">FAQ</a>
+      <a href="/#faq">FAQ</a>
       <a href="mailto:bellybliss.app@gmail.com">Contact</a>
       <a href="professionals.html">Word partner</a>
     </div>
     <div class="footer-col">
       <h4>Juridisch</h4>
       <a href="privacy.html">Privacybeleid</a>
-      <a href="#">Algemene Voorwaarden</a>
     </div>
   </div>
 <div class="legal-trademarks">
