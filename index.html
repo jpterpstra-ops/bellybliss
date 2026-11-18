@@ -237,6 +237,38 @@ footer{background:var(--text);color:rgba(255,255,255,0.7);padding:3rem 2rem;}
   .nav-cta{padding:8px 16px;font-size:13px;white-space:nowrap;}
   .btn-primary{padding:12px 22px;font-size:14px;white-space:nowrap;}
 }
+
+/* Internal links, just above the footer */
+.reads{padding-top:2.75rem;padding-bottom:3.25rem;}
+.reads .blog-list{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:16px;
+  margin-top:0.25rem;
+}
+.reads .blog-card{height:100%;}
+.reads .blog-card h3{
+  font-family:'Inter',sans-serif;
+  font-size:1.05rem;
+  font-weight:700;
+  line-height:1.35;
+  margin:0 0 0.45rem;
+  color:var(--text);
+}
+.reads-all{
+  display:inline-flex;
+  margin-top:1.15rem;
+  color:var(--green);
+  font-weight:600;
+  font-size:14px;
+  text-decoration:none;
+}
+.reads-all:hover{text-decoration:underline;}
+.reads-all:focus-visible,
+.reads .blog-card:focus-visible{outline:2px solid var(--green);outline-offset:3px;}
+@media(max-width:768px){
+  .reads .blog-list{grid-template-columns:1fr;}
+}
 </style>
 </head>
 <body>
@@ -434,6 +466,33 @@ footer{background:var(--text);color:rgba(255,255,255,0.7);padding:3rem 2rem;}
     </div>
   </div>
 </div>
+
+<!-- LEES MEER -->
+<section class="section reads" aria-labelledby="lees-meer">
+  <h2 class="section-title" id="lees-meer">Lees meer over PDS en FODMAP</h2>
+  <ul class="blog-list">
+    <li>
+      <a class="blog-card" href="/blog/boodschappen-doen-met-pds.html">
+        <h3>Boodschappen doen met PDS: zo lees je de schappen zonder stress</h3>
+        <p>Hoe je in de Nederlandse supermarkt etiketten leest bij PDS, zonder hele schappen te schrappen.</p>
+      </a>
+    </li>
+    <li>
+      <a class="blog-card" href="/blog/low-fodmap-aanpak-in-fasen.html">
+        <h3>De low-FODMAP-aanpak in drie fasen, samen met een diëtist</h3>
+        <p>Hoe de low-FODMAP-aanpak in drie fasen werkt: vervangen, herintroduceren, persoonlijk maken.</p>
+      </a>
+    </li>
+    <li>
+      <a class="blog-card" href="/blog/verborgen-fodmaps-op-het-etiket.html">
+        <h3>Verborgen FODMAPs op het etiket: knoflook, ui, inuline en meer</h3>
+        <p>Knoflook, ui, inuline, cichoreiwortelvezel, honing en peulvruchten staan vaak anders op het etiket.</p>
+      </a>
+    </li>
+  </ul>
+  <a class="reads-all" href="/blog/">Alle artikelen</a>
+</section>
+
 <!-- FOOTER -->
 <footer>
   <div class="footer-inner">
