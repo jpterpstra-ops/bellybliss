@@ -1,0 +1,6 @@
+exclude:
+  - _content
+  - scripts
+  - tests
+  - README-i18n.txt
+  - Review-English.command

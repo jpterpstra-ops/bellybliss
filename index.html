@@ -278,22 +278,25 @@ footer{background:var(--text);color:rgba(255,255,255,0.7);padding:3rem 2rem;}
   .reads .blog-list{grid-template-columns:1fr;}
 }
 </style>
-</head>
+<!-- bellybliss-i18n:start -->
+<link rel="alternate" hreflang="nl" href="https://bellybliss.online/">
+<link rel="alternate" hreflang="en" href="https://bellybliss.online/en/">
+<link rel="alternate" hreflang="x-default" href="https://bellybliss.online/en/">
+<link rel="stylesheet" href="/assets/i18n.css"><link rel="preload" as="image" href="/assets/bellybliss-nl-hero-schuin.webp" fetchpriority="high"><link rel="stylesheet" href="/assets/english-home-motion.css"><link rel="stylesheet" href="/assets/dutch-visual.css"><script src="/assets/english-home-motion.js" defer></script>
+<!-- bellybliss-i18n:end --></head>
 <body>
 
 <!-- NAV -->
 <nav>
-  <a class="nav-logo" href="/">
-    <picture><source type="image/webp" srcset="/assets/logo-72.webp 72w, /assets/logo-144.webp 144w" sizes="36px"><img src="/assets/logo-72.png" srcset="/assets/logo-72.png 72w, /assets/logo-144.png 144w" sizes="36px" width="36" height="36" alt=""></picture>
-    <span>BellyBliss</span>
-  </a>
+  <a class="nav-logo" href="/"><img class="header-logo" src="/assets/bellybliss-header-logo-v5.png" width="1325" height="365" alt="BellyBliss"></a>
   <div class="nav-end">
     <a class="nav-text" href="/blog/">Blog</a>
     <a class="nav-cta" href="#winkels">Download</a>
   </div>
-</nav>
+<!-- bellybliss-i18n:start --><div class="language-switch" role="group" aria-label="Taal kiezen"><a href="/" lang="nl" hreflang="nl" aria-label="Nederlands" aria-current="page">NL</a><a href="/en/" lang="en" hreflang="en" aria-label="English">EN</a></div><!-- bellybliss-i18n:end --></nav>
 
 <!-- HERO -->
+<main class="dutch-home" id="content">
 <section class="hero">
   <div class="hero-text">
     <div class="hero-badge">🌿 Voor iedereen met PDS & buikklachten</div>
@@ -317,9 +320,7 @@ footer{background:var(--text);color:rgba(255,255,255,0.7);padding:3rem 2rem;}
       <li>Geen account nodig</li>
     </ul>
   </div>
-  <div class="hero-screens">
-    <picture><source type="image/webp" srcset="assets/screenshot-scan-web.webp"><img class="screen-main" src="assets/screenshot-scan-web.jpg" width="296" height="640" alt="BellyBliss — scan via barcode of ingrediëntenlijst" fetchpriority="high"></picture>
-  </div>
+  <div class="hero-screens"><div class="hero-parallax"><div class="hero-intro"><div class="hero-hover"><img class="screen-main" src="/assets/bellybliss-nl-hero-schuin.webp" width="1059" height="1238" style="--nl-ratio:1059 / 1238" alt="BellyBliss — scan via barcode of ingrediëntenlijst" fetchpriority="high"></div></div></div></div>
 </section>
 
 <!-- FEATURES -->
@@ -329,36 +330,20 @@ footer{background:var(--text);color:rgba(255,255,255,0.7);padding:3rem 2rem;}
   <p class="section-sub">Gebouwd voor iedereen met een prikkelbare darm die al genoeg heeft geprobeerd en gewoon wil weten wat er aan de hand is.</p>
 
   <div class="features-grid">
-    <div class="feature-card">
-      <div class="feature-icon">📷</div>
-      <h3>Scan barcode</h3>
-      <p>Scan de barcode voor het snelste resultaat. Geen barcode op de verpakking? Maak dan een foto van de ingrediëntenlijst — BellyBliss herkent direct lactose, gluten, uien, knoflook en andere FODMAP-triggers. Altijd gratis.</p>
-    </div>
+
     <div class="feature-card">
       <div class="feature-icon">📊</div>
       <h3>Persoonlijke patronen</h3>
       <p>Geen algemene lijstjes — inzichten op basis van jóuw lichaam. Welk product komt steeds terug op de dagen dat het mis gaat?</p>
     </div>
-    <div class="feature-card">
-      <div class="feature-icon">📖</div>
-      <h3>Dagboek zonder gedoe</h3>
-      <p>Buikgevoel bijhouden kost 10 seconden per dag. Registreer wat je eet en hoe je je voelt — de app doet de rest.</p>
-    </div>
+
     <div class="feature-card">
       <div class="feature-icon">🔒</div>
       <h3>Privé & veilig</h3>
       <p>Geen account nodig. Je dagboek blijft op je telefoon. Productopzoekingen, abonnementen, meldingen en beveiliging gebruiken externe diensten die technische gegevens verwerken.</p>
     </div>
-    <div class="feature-card">
-      <div class="feature-icon">🎯</div>
-      <h3>Eigen tolerantielijst</h3>
-      <p>Stel per FODMAP-groep in wat jij verdraagt en pas dit direct aan na een scan. Jouw advies wordt persoonlijker — de ingrediëntenanalyse blijft objectief.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon">🌬️</div>
-      <h3>Adempauze</h3>
-      <p>Meditatieve ademoefeningen (Box, 4-7-8, 5:5) om stress te verminderen — vaak een onderschatte trigger bij PDS-klachten.</p>
-    </div>
+
+
     <div class="feature-card">
       <div class="feature-icon">📄</div>
       <h3>Consultoverzicht</h3>
@@ -369,16 +354,27 @@ footer{background:var(--text);color:rgba(255,255,255,0.7);padding:3rem 2rem;}
 </section>
 
 <!-- SCREENSHOTS -->
-<section class="section">
+<section class="section story-section">
   <div class="section-label">In de app</div>
   <h2 class="section-title">Zo ziet het eruit.</h2>
   <p class="section-sub">Van scannen tot je eigen tolerantielijst, van patronen ontdekken tot even bijkomen met een adempauze.</p>
-  <div class="screens-gallery">
-    <picture><source type="image/webp" srcset="assets/screenshot-scan-web.webp"><img src="assets/screenshot-scan-web.jpg" width="296" height="640" alt="Scan via barcode of ingrediëntenlijst" loading="lazy" decoding="async"></picture>
-    <picture><source type="image/webp" srcset="assets/screenshot-toleranties-web.webp"><img src="assets/screenshot-toleranties-web.jpg" width="296" height="640" alt="Stel je eigen tolerantielijst in" loading="lazy" decoding="async"></picture>
-    <picture><source type="image/webp" srcset="assets/screenshot-patroon-web.webp"><img src="assets/screenshot-patroon-web.jpg" width="296" height="640" alt="Deel een overzicht met je diëtist" loading="lazy" decoding="async"></picture>
-    <picture><source type="image/webp" srcset="assets/screenshot-adempauze-web.webp"><img src="assets/screenshot-adempauze-web.jpg" width="296" height="640" alt="Meditatieve ademoefeningen bij PDS" loading="lazy" decoding="async"></picture>
-  </div>
+  <div class="story-scenes"><div class="story-row"><div class="story-visual"><img class="screen-main" src="/assets/bellybliss-nl-hero-schuin.webp" width="1059" height="1238" style="--nl-ratio:1059 / 1238" alt="Scan via barcode of ingrediëntenlijst" loading="lazy" decoding="async"></div>    <div class="feature-card story-copy">
+      <div class="feature-icon">📷</div>
+      <h3>Scan barcode</h3>
+      <p>Scan de barcode voor het snelste resultaat. Geen barcode op de verpakking? Maak dan een foto van de ingrediëntenlijst — BellyBliss herkent direct lactose, gluten, uien, knoflook en andere FODMAP-triggers. Altijd gratis.</p>
+    </div></div><div class="story-row story-row--reverse"><div class="story-visual"><img class="screen-main" src="/assets/nl-phones-2.svg" width="927" height="1567" style="--nl-ratio:927 / 1567" alt="Stel je eigen tolerantielijst in" loading="lazy" decoding="async"></div>    <div class="feature-card story-copy">
+      <div class="feature-icon">🎯</div>
+      <h3>Eigen tolerantielijst</h3>
+      <p>Stel per FODMAP-groep in wat jij verdraagt en pas dit direct aan na een scan. Jouw advies wordt persoonlijker — de ingrediëntenanalyse blijft objectief.</p>
+    </div></div><div class="story-row"><div class="story-visual"><img class="screen-main" src="/assets/nl-phones-3.svg" width="916" height="1440" style="--nl-ratio:916 / 1440" alt="Deel een overzicht met je diëtist" loading="lazy" decoding="async"></div>    <div class="feature-card story-copy">
+      <div class="feature-icon">📖</div>
+      <h3>Dagboek zonder gedoe</h3>
+      <p>Buikgevoel bijhouden kost 10 seconden per dag. Registreer wat je eet en hoe je je voelt — de app doet de rest.</p>
+    </div></div><div class="story-row story-row--reverse"><div class="story-visual"><img class="screen-main" src="/assets/nl-phones-4.svg" width="916" height="1509" style="--nl-ratio:916 / 1509" alt="Meditatieve ademoefeningen bij PDS" loading="lazy" decoding="async"></div>    <div class="feature-card story-copy">
+      <div class="feature-icon">🌬️</div>
+      <h3>Adempauze</h3>
+      <p>Meditatieve ademoefeningen (Box, 4-7-8, 5:5) om stress te verminderen — vaak een onderschatte trigger bij PDS-klachten.</p>
+    </div></div></div>
 </section>
 
 <!-- PRICING -->
@@ -502,6 +498,7 @@ footer{background:var(--text);color:rgba(255,255,255,0.7);padding:3rem 2rem;}
 </section>
 
 <!-- FOOTER -->
+</main>
 <footer>
   <div class="footer-inner">
     <div>
