@@ -1,0 +1,29 @@
+/* Dutch review additions. Content, prices and legal copy are preserved. */
+.dutch-home .hero-screens .screen-main{width:100%;height:auto;aspect-ratio:var(--nl-ratio);max-width:100%;margin:auto;}
+.dutch-home .story-visual img{--image-ratio:var(--nl-ratio);}
+.dutch-home .story-copy a{color:var(--green);}
+.dutch-home .story-copy h3{font-family:'Inter',sans-serif;}
+.dutch-home .section a{color:#116b5d;}
+.dutch-home .store-badge-apple{height:48px;width:auto;}
+/* Official Dutch Google artwork has the same built-in clear space. */
+.dutch-home .store-badge-play{height:calc(48px * 112 / 92);width:auto;margin:calc(-48px * 10 / 92);}
+@media(max-width:768px){.dutch-home .features-grid{grid-template-columns:minmax(0,1fr);}}
+/* Article-only English treatment; shared Dutch styles remain untouched. */
+@media screen{
+ html:lang(nl) body:has(.blog-main > .blog-meta){background:linear-gradient(150deg,#e8f5ee 0,#fff9ed 700px,#f6faf9 1250px);}
+ html:lang(nl) .blog-main:has(> .blog-meta){max-width:800px;padding-top:8rem;}
+ html:lang(nl) .blog-main:has(> .blog-meta) h1{font-family:'Inter',sans-serif;font-weight:400;font-size:clamp(2rem,4.2vw,3.25rem);line-height:1.12;letter-spacing:-.035em;text-wrap:balance;margin:1rem 0 1.25rem;color:#143f36;}
+ html:lang(nl) .blog-main:has(> .blog-meta) > h2{font-size:clamp(1.5rem,2.7vw,2rem);font-weight:450;line-height:1.2;margin:2.5rem 0 1rem;color:#116b5d;letter-spacing:-.025em;text-wrap:balance;}
+ html:lang(nl) .blog-main:has(> .blog-meta) h3{font-weight:600;font-size:1.15rem;margin-top:1.75rem;}
+ html:lang(nl) .blog-main:has(> .blog-meta) > .blog-kicker{display:table;background:#dceee5;border-radius:999px;padding:6px 12px;font-size:.7rem;letter-spacing:.1em;color:#116b5d;}
+ html:lang(nl) .blog-main:has(> .blog-meta) > .blog-meta{font-size:.82rem;color:#4a6b65;margin-bottom:1.75rem;}
+ html:lang(nl) .blog-main:has(> .blog-meta) > .blog-meta + p{font-size:1.12rem;line-height:1.8;margin-bottom:1.5rem;}
+ html:lang(nl) .blog-main:has(> .blog-meta) > img,
+ html:lang(nl) .blog-main:has(> .blog-meta) figure{max-width:100%;height:auto;margin:2rem 0;}
+ html:lang(nl) .blog-main:has(> .blog-meta) .blog-disclaimer{border-left:3px solid #81b9a5;background:#edf5ef;margin:1.75rem 0;}
+ html:lang(nl) .blog-main:has(> .blog-meta) .blog-cta{background:linear-gradient(135deg,#e1f2e8,#fff6df);box-shadow:none;}
+}
+@media screen and (max-width:600px){
+ html:lang(nl) .blog-main:has(> .blog-meta){padding:7rem 1.25rem 3rem;}
+ html:lang(nl) .blog-main:has(> .blog-meta) h1{font-size:clamp(1.9rem,7.6vw,2.5rem);}
+}
